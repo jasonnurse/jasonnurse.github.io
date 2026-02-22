@@ -4,7 +4,9 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font-family: "PT Serif", serif; font-size: 1.25rem; line-height: 2rem; font-weight: 400; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; font-variant-ligatures: common-ligatures contextual; -moz-font-feature-settings: "kern", "liga", "clig", "calt"; -ms-font-feature-settings: "kern", "liga", "clig", "alt"; -webkit-font-feature-settings: "kern", "liga", "clig", "calt"; font-feature-settings: "kern", "liga", "clig", "calt"; overflow-x: hidden; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 1.25rem; line-height: 2rem; font-weight: 400; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; font-variant-ligatures: common-ligatures contextual; -moz-font-feature-settings: "kern", "liga", "clig", "calt"; -ms-font-feature-settings: "kern", "liga", "clig", "alt"; -webkit-font-feature-settings: "kern", "liga", "clig", "calt"; font-feature-settings: "kern", "liga", "clig", "calt"; overflow-x: hidden; }
+
+/** body { font-family: "PT Serif", serif; **/
 
 @media (max-width: 75em) { body { font-size: 1.25rem; line-height: 2rem; } }
 
@@ -57,7 +59,7 @@ h2 { font-size: 2.111rem; line-height: 2.5332rem; }
 
 @media (max-width: 45em) { h2 { font-size: 1.719rem; line-height: 1.3224em; } }
 
-h3 { font-family: "PT Serif", serif; }
+h3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; } /** font-family: "PT Serif", serif; **/
 
 h3, h4 { font-weight: normal; }
 
@@ -74,9 +76,9 @@ h4 { font-size: 1.333rem; line-height: 1.5996rem; }
 @media (max-width: 45em) { h4 { font-size: 1.233rem; line-height: 1.7329rem; } }
 
 /** Links */
-a { color: #d33682; text-decoration: none; }
+a { color: #B5451B; text-decoration: none; } /** color: #d33682 */
 
-a:visited { color: #c42b75; }
+a:visited { color: #B5451B; } /** color: #c42b75 */
 
 a:hover { color: #111; text-decoration: underline; }
 
@@ -123,9 +125,9 @@ hr { color: #3F3F3F; margin: 50px auto 25px auto; width: 100%; padding-left: 10%
 @media (max-width: 45em) { hr { font-size: 0.95rem; line-height: 1.84rem; } }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(900px - (50px * 2)); max-width: calc(900px - (50px * 2)); margin-right: auto; margin-left: auto; padding-right: 50px; padding-left: 50px; }
+.wrapper { max-width: -webkit-calc(900px - (50px * 2)); max-width: calc(1200px - (50px * 2)); margin-right: auto; margin-left: auto; padding-right: 50px; padding-left: 50px; }
 
-@media screen and (max-width: 700px) { .wrapper { max-width: -webkit-calc(900px - (50px)); max-width: calc(900px - (50px)); padding-right: 25px; padding-left: 25px; } }
+@media screen and (max-width: 700px) { .wrapper { max-width: -webkit-calc(1200px - (50px)); max-width: calc(1200px - (50px)); padding-right: 25px; padding-left: 25px; } }
 
 /** Clearfix */
 .about-col-wrapper:after, .wrapper:after { content: ""; display: table; clear: both; }
@@ -149,11 +151,11 @@ form input { font-size: 1.15rem; line-height: 1.84rem; color: #3F3F3F; font-fami
 
 @media (max-width: 45em) { form input { font-size: 0.95rem; line-height: 1.84rem; } }
 
-form input[type=email]:focus { border-color: #d33682; }
+form input[type=email]:focus { border-color: #B5451B; }
 
 form input[type=submit]:hover { color: #fdfdfd; background: #3F3F3F; }
 
-form input[type=submit]:active { background: #d33682; }
+form input[type=submit]:active { background: #B5451B; }
 
 .recentnewsd { font-size: 90%; line-height: 1.5; }
 
@@ -182,7 +184,7 @@ ul.recentnewsd { padding-left: 0; margin-left: 18px; }
 
 .site-header .lang-selector:hover .lang:first-child { padding-bottom: 10px; }
 
-.site-header .lang-selector:hover .lang a { color: #d33682; }
+.site-header .lang-selector:hover .lang a { color: #B5451B; }
 
 .site-header .lang-selector:hover .lang a:hover { text-decoration: none; color: #bfbfbf; }
 
@@ -202,11 +204,11 @@ ul.recentnewsd { padding-left: 0; margin-left: 18px; }
 
 .site-title, .site-title:visited { color: black; }
 
-.site-title:hover { text-decoration: none; border-bottom: 5px #d33682 solid; }
+.site-title:hover { text-decoration: none; border-bottom: 5px #B5451B solid; }
 
 .site-title b { font-weight: 600; }
 
-.with-pitch:hover { border-bottom: none; color: #d33682; }
+.with-pitch:hover { border-bottom: none; color: #B5451B; }
 
 .site-pitch { display: inline-block; clear: both; line-height: 60px; padding-left: 10px; color: #3F3F3F; }
 
@@ -234,7 +236,7 @@ ul.recentnewsd { padding-left: 0; margin-left: 18px; }
 
 @media screen and (max-width: 500px) { .site-nav .nav-list li { height: auto; line-height: normal; } .site-nav .nav-list li:nth-child(n+0) { margin: 0; height: auto; padding: 0 10px 0px; } .site-nav .nav-list li a { margin: 0px; padding: 0px; } }
 
-@media screen and (max-width: 500px) { .site-nav { position: absolute; top: 9px; right: 25px; background-color: #fdfdfd; border: 1px solid #bfbfbf; border-radius: 5px; text-align: right; margin-left: 20px; } .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; } .site-nav .menu-icon > svg path { fill: black; } .site-nav .trigger { clear: both; display: none; } .site-nav:hover .trigger { display: block; padding-bottom: 5px; } .site-nav .nav-list .page-link:hover { color: #d33682; } .site-nav .nav-list li:hover { border: none; } .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; } .site-nav .page-link:not(:last-child) { margin-right: 0; } }
+@media screen and (max-width: 500px) { .site-nav { position: absolute; top: 9px; right: 25px; background-color: #fdfdfd; border: 1px solid #bfbfbf; border-radius: 5px; text-align: right; margin-left: 20px; } .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; } .site-nav .menu-icon > svg path { fill: black; } .site-nav .trigger { clear: both; display: none; } .site-nav:hover .trigger { display: block; padding-bottom: 5px; } .site-nav .nav-list .page-link:hover { color: #B5451B; } .site-nav .nav-list li:hover { border: none; } .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; } .site-nav .page-link:not(:last-child) { margin-right: 0; } }
 
 /** Site footer */
 .site-footer { font-size: 1rem; line-height: 1.6rem; border-top: 1px solid #bfbfbf; color: #3F3F3F; }
@@ -349,7 +351,7 @@ ul.recentnewsd { padding-left: 0; margin-left: 18px; }
 
 @media screen and (max-width: 500px) { .with-thumbnail .wrapper { margin: 0px; } }
 
-.post-title { margin-top: 0; color: #d33682; }
+.post-title { margin-top: 0; color: #B5451B; }
 
 .post-summary { margin-top: 0; }
 
@@ -396,7 +398,7 @@ ul.recentnewsd { padding-left: 0; margin-left: 18px; }
 
 .contact-list a:hover { text-decoration: none; }
 
-.user-picture { border-radius: 50%; max-width: calc(85%); }
+.user-picture { border-radius: 12px; max-width: calc(85%); } /** border-radius: 50%; **/
 
 .about-col-1 { font-size: 1rem; line-height: 1.6rem; padding-right: 25px; width: -webkit-calc(35% - (50px / 4)); width: calc(35% - (50px / 4)); }
 
@@ -430,13 +432,13 @@ ul.recentnewsd { padding-left: 0; margin-left: 18px; }
 
 .msg-404 { margin-bottom: 50px; }
 
-.msg-404 .title { font-size: 2.941rem; line-height: 3.2351rem; font-family: "Open Sans", sans-serif; color: #d33682; }
+.msg-404 .title { font-size: 2.941rem; line-height: 3.2351rem; font-family: "Open Sans", sans-serif; color: #B5451B; }
 
 @media (max-width: 75em) { .msg-404 .title { font-size: 2.441rem; line-height: 2.6851rem; } }
 
 @media (max-width: 45em) { .msg-404 .title { font-size: 2.148rem; line-height: 2.6851rem; } }
 
-.msg-404 .description { font-size: 2.111rem; line-height: 2.5332rem; font-family: "PT Serif", serif; }
+.msg-404 .description { font-size: 2.111rem; line-height: 2.5332rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; } /** "PT Serif", serif; **/
 
 @media (max-width: 75em) { .msg-404 .description { font-size: 1.653em; line-height: 1.3224em; } }
 
